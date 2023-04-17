@@ -2,9 +2,8 @@ const categoriesEL = document.querySelectorAll('#categories');
 const categoriesLeng = categoriesEL.forEach(el => {
   console.log("Number of categories:", el.children.length)
 })
-const itemEl = document.querySelector('.item');
-console.log(itemEl)
-const itemElLeng = itemEl.forEach(elem => {
-  console.log(`Category: ${itemEl.h2.textContent}`)
+const itemEl = document.querySelectorAll('.item ul');
+const itemLengthEl = itemEl.forEach(li=> {
+  console.log(`Category:`, li.parentNode.firstElementChild.textContent)
+  console.log("Elements:", li.children.length)
 })
-
