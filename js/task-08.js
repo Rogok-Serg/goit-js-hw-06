@@ -12,8 +12,8 @@ function onFormSubmit(event) {
     if (email === '' || password === '') {
      return alert("Всі поля повинні бути заповнені")
     } 
-
     console.log(formData) 
+    formEl.reset()
   }
   
 
