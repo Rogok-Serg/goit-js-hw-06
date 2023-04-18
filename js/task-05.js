@@ -7,13 +7,9 @@ const inputName = document.querySelector('#name-input');
 const outputName = document.querySelector('#name-output');
 const outputNameText = outputName.textContent
 function substitutesCurrentValue(event) {
-  if (event.currentTarget.value.trim() === "") {
-    outputName.textContent = outputNameText
-    
-  } else {
+  event.currentTarget.value.trim() === ""?
+    outputName.textContent = outputNameText:
     outputName.textContent = event.currentTarget.value
-  }
-   
 }
   inputName.addEventListener('input', substitutesCurrentValue)
   // outputName.addEventListener('input', substitutesCurrentValue)

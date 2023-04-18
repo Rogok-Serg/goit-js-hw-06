@@ -19,7 +19,7 @@ inputLength.addEventListener('blur', checksLengthInput);
 function checksLengthInput(event) {
   console.log(Number(inputLength.dataset.length))
   console.log(event.currentTarget.value.length)
-  if (event.currentTarget.value.trim().length == Number(inputLength.dataset.length)) {
+  if (event.currentTarget.value.trim().length === Number(inputLength.dataset.length)) {
     inputLength.classList.add('valid')
     inputLength.classList.remove('invalid')
   } else {

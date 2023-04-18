@@ -11,7 +11,6 @@ ingredients.map(ingredient => {
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
   liEl.classList.add("item")
-  ulEl.appendChild(liEl)});
-
-document.body.append(ulEl)
+  ulEl.append(liEl)
+})
 console.log(ulEl)

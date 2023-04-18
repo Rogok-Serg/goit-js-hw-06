@@ -8,11 +8,11 @@ const buttonIncrement = document.querySelector('[data-action="increment"]');
 let counterValue = 0;
 
 function addValueBtnClick (event) {
-  counterValue += 1;
+  counterValue -= 1;
   valueEl.textContent = counterValue;
 } 
 function subtractValueBtnClick (event) {
-  counterValue -= 1;
+  counterValue += 1;
   valueEl.textContent = counterValue;
 }
 buttonDecrement.addEventListener('click', addValueBtnClick);
