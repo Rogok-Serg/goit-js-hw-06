@@ -7,10 +7,12 @@ const ingredients = [
   'Condiments',
 ];
 const ulEl = document.querySelector("#ingredients");
-ingredients.map(ingredient => {
+ingredients.map((ingredient) => {
+  const items = []
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
   liEl.classList.add("item")
-  ulEl.append(liEl)
+  items.push(liEl)
+  ulEl.append(...items)
 })
 console.log(ulEl)
